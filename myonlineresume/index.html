@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    <style>
+  
+{
+  box-sizing: border-box;}
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: body {
+  background: url('your-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color:black;
+}
+ /* Black background */
+    color:black; / White text /
+  }
+
+  nav {
+    background-color: #7C7C7C Light silver nav background/
+    overflow: hidden;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: #FFFFFF; /* Black text on silver */
+    padding: 14px 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  nav a:hover,
+  nav a.active {
+    background-color: #aaa; / Darker silver on hover/active /
+    color: #000;
+  }
+
+ .tab-content {
+  display: none;
+  padding: 40px 20px;
+  background: #111; /* Dark background for tab content */
+  min-height: 100vh; /* Full page height */
+  color: #fff;
+  border: 5px solid rgba(12, 0, 0, 0); /* Invisible or soft border */
+  box-sizing: border-box;
+}
+
+
+  .tab-content.active {
+    display: block;
+  }
+
+  h1 {
+    margin-top: 0;
+    text-align: center;
+    border: 5px solid rgba(12,0,0,0.00);
+	  }
+  .image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+  .grid-item {
+    text-align: center;
+  }
+
+ .grid-item img {
+  width: 101%;
+  height: 450px; /* or any desired uniform height */
+  object-fit: cover; /* fills the box by cropping, no black bars */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+  .grid-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+  }
+	  
+	  #selfie-image {padding-left: 20%}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="tab-link active" onclick="showTab('homepage')">Homepage</a>
+    <a class="tab-link" onclick="showTab('about')">About Me</a>
+    <a class="tab-link" onclick="showTab('experience')">Job Experience</a>
+    <a class="tab-link" onclick="showTab('education')">Education</a>
+  </nav>
+  <div id="homepage" class="tab-content active">
+    <h1>Introducing Peter Huynh</h1>
+	   <div	id="selfie-image">
+	  <img src="images/Selfie.png"
+		   width="80%" alt="Project 3">
+	  </div>   
+       <p><p style="text-align: center;">Contact info:</p>
+	  <div style="text-align: center; margin-top: 20px;">
+  <p>Phuynh@Csumb.edu</p>
+</div>
+
+</p>
+  </div>
+
+  <div id="about" class="tab-content">
+    <h1>About Me</h1>
+    <p>A little bit about myself is that I was born and raised in Monterey Bay. Currently, I am pursuing a degree in Business with my concentration as Information Systems. I am expected to graduated Fall 2025. Most of the time I love to travel, Walk Ozzie the Australian Shepherd, or spend time with friends and family. My goal is to become successful in the Information Technology field, become a successful IT, and help support my dad for a long time. </p>
+	 
+<div style="text-align: center; margin: 20px 0;">
+ <img src="images/VNbridge.jpg"/ alt="About Me Image" style="width: 60%; max-width: 500px; border-radius: 10px;">
+	<div style="text-align: center; margin: 20px 0;">
+
+  <p style="margin-top: 10px; color: #ccc; font-style: italic;">Taken from the time I visited the dragon bridge in Vietnam during winter break.</p>
+</div>
+
+
+	  </div>
+	  <div class="image-grid">
+  <div class="grid-item">
+    <img src="images/Billiards.jpg" alt="Hobby 1">
+    <p>I enjoy playing pool</p>
+  </div>
+  <div class="grid-item">
+    <img src="images/Tacos.jpg" alt="Hobby 2">
+    <p>Love taco tuesdays!</p>
+  </div>
+  <div class="grid-item">
+    <img src="images/Ozzie.png" alt="Hobby 3">
+    <p>And we all love Ozzie!</p>
+  </div>
+</div>
+
+  </div>
+
+  <div id="experience" class="tab-content">
+  <h1>Job Experience</h1>
+  <div class="image-grid">
+    <div class="grid-item">
+      <img src="images/thepl.png" alt="The Park Lane - Caregiving/Medtech">
+      <p>The Park Lane - Caregiver/Medical Technician</p>
+      <div style="background-color: #fff; color: #000; padding: 10px; border-radius: 8px; margin-top: 10px; font-size: 14px;">
+        Assisted elderly residents with daily living activities and managed medication administration.
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="images/Plaza.jpg" alt="Monterey Plaza Hotel and Spa">
+      <p>Monterey Plaza Hotel and Spa<br>Valet</p>
+      <div style="background-color: #fff; color: #000; padding: 10px; border-radius: 8px; margin-top: 10px; font-size: 14px;">
+        Assisted and retrieved guests’ vehicles and provided directions and any other guest-related assistance.
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="images/Howah.jpg" alt="Ho Wah Chinese Restaurant">
+      <p>Ho Wah Chinese Restaurant</p>
+      <div style="background-color: #fff; color: #000; padding: 10px; border-radius: 8px; margin-top: 10px; font-size: 14px;">
+        Assisted guests with menu choices and accommodating their needs.
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="images/Zumiez.jpg" alt="Zumiez">
+      <p>Zumiez</p>
+      <div style="background-color: #fff; color: #000; padding: 10px; border-radius: 8px; margin-top: 10px; font-size: 14px;">
+        Provided customer service utilizing suggestive selling techniques.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="education" class="tab-content">
+    <h1>Education</h1>
+	  <img src="images/Bothcampus.png"
+		   width="100%" alt="Project 3">
+    <ul>
+      <li><strong>Bachelor of Science</strong> in Information Systems candidate, Anticipated completion June 2026, California State University of Monterey Bay (August 2021 - Present)</li>
+      <li><strong>AA-T in Kinesiology</strong>, Monterey Peninsula College (August 2015 - June 2021)</li>
+    </ul>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const links = document.querySelectorAll('.tab-link');
+
+      tabs.forEach(tab => tab.classList.remove('active'));
+      links.forEach(link => link.classList.remove('active'));
+
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
+
+
+
